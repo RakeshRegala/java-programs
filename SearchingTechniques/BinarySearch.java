@@ -1,6 +1,11 @@
+//Using Driver class
+
+
+
+
 import java.util.*;
-class search{
-	public static int Searching(int a[],int key,int n){
+public class search{
+	public static int BinarySearch(int a[],int key,int n){
 	int low=0,high=n;
 	int mid;
 	while(low<=high)
@@ -15,11 +20,8 @@ class search{
 	}
 	return -1;
 	}
-}
-
-class BinarySearch{	
+	
 	public static void main(String[] args){
-    search obj=new search();
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter Number of elements: ");
 	int n=sc.nextInt();
@@ -30,7 +32,7 @@ class BinarySearch{
 	}
 	System.out.println("Enter Key: ");
 	int key=sc.nextInt();
-	int p=obj.Searching(a,key,n);
+	int p=BinarySearch(a,key,n);
 	if(p==-1)
 		System.out.println("Key not found");
 	else
