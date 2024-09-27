@@ -1,0 +1,31 @@
+// Flyable.java
+interface Flyable {
+    void fly();
+}
+
+// Swimmable.java
+interface Swimmable {
+    void swim();
+}
+// Duck.java
+class Duck implements Flyable, Swimmable {
+    @Override
+    public void fly() {
+        System.out.println("The duck is flying.");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("The duck is swimming.");
+    }
+}
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Duck duck = new Duck();
+
+        // Call both methods on the Duck object
+        duck.fly();
+        duck.swim();
+    }
+}
