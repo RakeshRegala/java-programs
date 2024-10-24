@@ -26,9 +26,9 @@ class JAVA extends Subjects{
 
 public class polymorphism {
     public static void main(String[] args){
-        DBMS d=new DBMS();
+        Subjects d=new DBMS();
         d.topic();
-        JAVA j=new JAVA();
+        Subjects j=new JAVA();
         j.topic();
     }
 }
