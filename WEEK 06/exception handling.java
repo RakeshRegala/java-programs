@@ -9,7 +9,7 @@ class Handling{
 			System.out.println("Error! Division by Zero is not allowed");
 		}
 		finally{
-			System.out.println("Division is competed");
+			System.out.println("Division is completed");
 		}
 }
 }
