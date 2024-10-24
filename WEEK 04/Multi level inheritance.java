@@ -5,26 +5,25 @@ class Animal{
 }
 
 class Dog extends Animal{
-    void makeSound(){
-        System.out.println("I am a dog");
+    void bark(){
+        System.out.println("My Dog is barking");
     }
 }
 
 class Puppy extends Dog{
-    void makeSound(){
-        System.out.println("I am a puppy");
+    void weep(){
+        System.out.println("puppy is weeping");
     }
 }
 
 
 class Multilevel{
     public static void main(String[] args){
-        Animal a=new Animal();
-        Dog d=new Dog();
+     
         Puppy p=new Puppy();
-        a.makeSound();
-        d.makeSound();
         p.makeSound();
+        p.bark();
+        p.weep();
 
     }
 }
