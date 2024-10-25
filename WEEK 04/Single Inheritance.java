@@ -1,6 +1,6 @@
 //import java.util.*;
 class Vehicle{
-    void start(){
+    void start1(){
         System.out.println("Vechicle Started"); 
     }
 }
@@ -16,8 +16,8 @@ class Car extends Vehicle{
 public class inheritance{
     public static void main(String[] args){
         Vehicle v=new Vehicle();
-        Car obj=new Car();
+        Car c=new Car();
         v.start();
-        obj.start();
+        c.start1();
     }
 }
