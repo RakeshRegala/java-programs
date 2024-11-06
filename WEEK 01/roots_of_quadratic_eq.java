@@ -14,8 +14,8 @@ public class quadratic_eq_discriminate {
         
         if(d>0){
             System.out.println("The eq has two distinct real root:");
-            double root1=(-b + Math.sqrt(d))/(2*(a));
-            double root2=(-b - Math.sqrt(d))/(2*(a));
+            double root1=(-b + Math.sqrt(d))/(2*(a));                                    //r1=-b/a
+            double root2=(-b - Math.sqrt(d))/(2*(a));                                    //r2=0
             System.out.println("Root1:"+root1+" "+ "Root2:"+root2);
         }
         
@@ -26,7 +26,7 @@ public class quadratic_eq_discriminate {
         }
         
         else{
-            System.out.println("The eq has two complex roots:");
+            System.out.println("The eq has two complex roots:");                        //Roots are imaginary
             double real=-b/(2*a);
             double imaginary=Math.sqrt(-d)/(2*a);
             System.out.println("Root1:"+real+" + "+imaginary+"i");
