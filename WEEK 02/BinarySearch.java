@@ -1,7 +1,7 @@
 import java.util.*;
 class search{
 	public static int Searching(int a[],int key,int n){
-	int low=0,high=n;
+	int low=0,high=n-1;
 	int mid;
 	while(low<=high)
 	{
